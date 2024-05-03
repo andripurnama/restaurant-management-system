@@ -10,7 +10,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="{{ asset('images/img.jpg') }}" alt="Profile Picture" class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -29,12 +29,12 @@
                   <li>
                     <a>
                         <i class="fa fa-database"></i> 
-                        Master Data 
+                        Master 
                         <span class="fa fa-chevron-down"></span>
                     </a>
                     <ul class="nav child_menu">
-                      <li><a href="#">Product</a></li>
-                      <li><a href="#">Jasa Servis</a></li>
+                      <li><a href="{{ route('product.index') }}">Product</a></li>
+                      <li><a href="#">Product Variant</a></li>
                     </ul>
                   </li>
                 </ul>
