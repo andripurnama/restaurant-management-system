@@ -43,12 +43,6 @@
           <!-- top tiles -->
           @yield('content')
         </div>
-          <!-- /top tiles -->
-
-          
-        <!-- /page content -->
-
-        <!-- footer content -->
         <footer>
           <div class="pull-right">
             Restaurant Management System - 2024
@@ -99,6 +93,6 @@
 
     <!-- Custom Theme Scripts -->
     <script src="{{ asset('/build/js/custom.min.js') }}"></script>
-	
+    @yield('scripts')
   </body>
 </html>
