@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('master_products', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('ProductId');
+            $table->string('ProductName');
+            $table->string('ProductCategory');
+            $table->double('SellingPrice');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
